@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+<!-- The block below overwrites block in base -->
+{% block head %}
+    <title>Profile</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h3>Profile</h3>
+        <p>Username: {{ user }}</p>
+        <p>First Name {{ user.first_name }}</p>
+        <p>Last Name: {{ user.last_name }}</p>
+        <p>Email: {{ email }}</p>
+    </div>
+
+{% endblock %}
